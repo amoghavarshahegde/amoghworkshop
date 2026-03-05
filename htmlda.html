@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amoghavarsha Portfolio</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg,#0f2027,#203a43,#2c5364);
+    color:white;
+}
+
+/* Navigation */
+nav{
+    display:flex;
+    justify-content:space-between;
+    padding:15px 50px;
+    background:rgba(0,0,0,0.4);
+}
+
+nav h1{
+    color:#00ffd5;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav ul li{
+    cursor:pointer;
+}
+
+/* Hero section */
+.hero{
+    height:80vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero h2{
+    font-size:40px;
+}
+
+.hero span{
+    color:#00ffd5;
+}
+
+/* Button */
+.btn{
+    padding:12px 25px;
+    border:none;
+    background:#00ffd5;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+    margin-top:15px;
+    border-radius:8px;
+}
+
+/* Cards */
+.container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    padding:40px;
+}
+
+.card{
+    background:white;
+    color:black;
+    width:250px;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.1);
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:20px;
+    background:black;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<h1>My Portfolio</h1>
+
+<ul>
+<li>Home</li>
+<li>Projects</li>
+<li>Contact</li>
+</ul>
+</nav>
+
+<section class="hero">
+<h2>Hello, I'm <span>Amoghavarsha</span></h2>
+<p>Engineering Student | Java Developer | DSA Learner</p>
+
+<button class="btn" onclick="showMessage()">Click Me</button>
+</section>
+
+<section class="container">
+
+<div class="card">
+<h3>DSA Practice</h3>
+<p>Solving problems daily on LeetCode.</p>
+</div>
+
+<div class="card">
+<h3>Java Projects</h3>
+<p>Building applications using Java.</p>
+</div>
+
+<div class="card">
+<h3>Web Development</h3>
+<p>Learning HTML, CSS and JavaScript.</p>
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Amoghavarsha | GitHub Portfolio</p>
+</footer>
+
+<script>
+function showMessage(){
+    alert("Welcome to my website 🚀");
+}
+</script>
+
+</body>
+</html>
